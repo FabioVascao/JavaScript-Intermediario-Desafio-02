@@ -80,7 +80,7 @@ button {
   background: var(--bg-card-dark-mode);
 }
 #climate button.dark.select {
-  background: var(--bg-iten-select);
+  background: #ffffff;
 }
 h1.dark {
   color: #ffffff;
