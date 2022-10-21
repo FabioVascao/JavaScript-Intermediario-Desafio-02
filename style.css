@@ -10,6 +10,7 @@
   --bg-iten-hover: #b7b7bb;
   --bg-iten-select: #02799D;
   --bg-dark-mode:  #121214;
+  --bg-card-dark-mode: #29292E;
 }
 header button {
   position: fixed;
@@ -36,16 +37,15 @@ main {
   max-width: 82rem;
   max-height: 33rem;
 }
+h1 {
+  color:var(--tt-heading);
+}
 span {
   font-size: 12.6rem;
   line-height: 14.8rem;
   text-align: center;
   text-transform: uppercase;
-  color:var(--tt-heading);
   margin-bottom: 1.7rem;
-}
-span.dark {
-  color: #ffffff;
 }
 button {
   border: none;
@@ -75,4 +75,13 @@ button {
 }
 #climate button.select {
   background: var(--bg-iten-select);
+}
+#climate button.dark {
+  background: var(--bg-card-dark-mode);
+}
+#climate button.dark.select {
+  background: var(--bg-iten-select);
+}
+h1.dark {
+  color: #ffffff;
 }
