@@ -10,30 +10,35 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-  <main>
-    <div id="timer">
-        <span id="minutes">25</span>
-        <span>:</span>
-        <span id="seconds">00</span>
-      <div id="card">
-        <button id="play"><img src="images/play.svg" alt="Botão de acionar Play"></button>
-        <button id="stop"><img src="images/stop.svg" alt="Botão de acionar o Stop"></button>
-        <button id="up"><img src="images/up.svg" alt="Botão de aumentar o tempo em 5 minutos"></button>
-        <button id="down"><img src="images/down.svg" alt="Botão de diminuir o tempo em 5 minutos"></button>
+  
+    <header>
+      <button class="mode"><img src="images/lightmode.svg" alt="Sol sinalizando o light mode"></button>
+      <button class="mode2 hide"><img src="images/darkmode.svg" alt="Lua sinalizando o dark mode"></button>
+    </header>
+    <main>
+      <div id="timer">
+          <span id="minutes">25</span>
+          <span>:</span>
+          <span id="seconds">00</span>
+        <div id="card">
+          <button id="play"><img src="images/play.svg" alt="Botão de acionar Play"></button>
+          <button id="stop"><img src="images/stop.svg" alt="Botão de acionar o Stop"></button>
+          <button id="up"><img src="images/up.svg" alt="Botão de aumentar o tempo em 5 minutos"></button>
+          <button id="down"><img src="images/down.svg" alt="Botão de diminuir o tempo em 5 minutos"></button>
+        </div>
       </div>
-    </div>
-    <div id="climate">
-      <div class="part1">
-        <button id="forest"><img src="images/forest.svg" alt="Botão de ir para floresta"></button>
-        <button id="market"><img src="images/market.svg" alt="Botão de ir para o mercado"></button>
+      <div id="climate">
+        <div class="part1">
+          <button id="forest"><img src="images/forest.svg" alt="Botão de ir para floresta"></button>
+          <button id="market"><img src="images/market.svg" alt="Botão de ir para o mercado"></button>
+        </div>
+        <div class="part2">
+          <button id="rain"><img src="images/rain.svg" alt="Botão de ir para a chuva"></button>
+          <button id="fire"><img src="images/fire.svg" alt="Botão de ir para o fogo"></button>
+        </div>
       </div>
-      <div class="part2">
-        <button id="rain"><img src="images/rain.svg" alt="Botão de ir para a chuva"></button>
-        <button id="fire"><img src="images/fire.svg" alt="Botão de ir para o fogo"></button>
-      </div>
-    </div>
-  </main>
-
-  <script src="js/index.js" type="module"></script>
+    </main>
+  
+    <script src="js/index.js" type="module"></script>
 </body>
 </html>

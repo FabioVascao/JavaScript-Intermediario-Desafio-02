@@ -9,6 +9,15 @@
   --bg-iten: #E1E1E6;
   --bg-iten-hover: #b7b7bb;
   --bg-iten-select: #02799D;
+  --bg-dark-mode:  #121214;
+}
+header button {
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+}
+header button.hide {
+  display: none;
 }
 body {
   font-family: 'Roboto', sans-serif;
