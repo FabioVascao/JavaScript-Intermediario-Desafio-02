@@ -24,6 +24,10 @@ const secondsDisplay = document.querySelector('#seconds')
 let minutes = Number(minutesDisplay.textContent) /* Transforma o 25 de caractere para Número na variável minutes*/
 let seconds = Number(secondsDisplay.textContent)
 
+const buttonModeLight = document.querySelector('.mode') /* Variáveis para o light e dark mode */
+const buttonModeDark = document.querySelector('.mode2')
+const h1 = document.querySelector('h1');
+
 /* Exporta as variáveis para outros documentos, sempre adicionar no export*/ 
 export {
   buttonForest,
@@ -42,5 +46,8 @@ export {
   minutesDisplay,
   secondsDisplay,
   minutes,
-  seconds
+  seconds,
+  buttonModeLight,
+  buttonModeDark,
+  h1
 }
