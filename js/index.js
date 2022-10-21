@@ -34,8 +34,12 @@ function pressButtonMode() {
 
 buttonModeLight.addEventListener('click', function() {
   pressButtonMode();
+  const body = document.querySelector('body');
+  body.style.backgroundColor = '#121214';
 })
 
 buttonModeDark.addEventListener('click', function() {
   pressButtonMode();
+  const body = document.querySelector('body');
+  body.style.backgroundColor = '#ffffff';
 })

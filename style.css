@@ -44,6 +44,9 @@ span {
   color:var(--tt-heading);
   margin-bottom: 1.7rem;
 }
+span.dark {
+  color: #ffffff;
+}
 button {
   border: none;
   background-color: transparent;
