@@ -1,0 +1,66 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+  --tt-heading: #323238;
+  --bg-iten: #E1E1E6;
+  --bg-iten-hover: #b7b7bb;
+  --bg-iten-select: #02799D;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+}
+main {
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  margin: 5rem;
+  max-width: 82rem;
+  max-height: 33rem;
+}
+span {
+  font-size: 12.6rem;
+  line-height: 14.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  color:var(--tt-heading);
+  margin-bottom: 1.7rem;
+}
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+#card {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+}
+#climate {
+  display: flex;
+}
+#climate button {
+  height: 13.8rem;
+  width: 15.2rem;
+  display: flex;
+  padding: 4.7rem;
+  margin: 3.2rem;
+  background-color: var(--bg-iten);
+  border-radius: 2.4rem;
+}
+#climate button:hover {
+  background: var(--bg-iten-hover);
+}
+#climate button.select {
+  background: var(--bg-iten-select);
+}
