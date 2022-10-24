@@ -6,14 +6,13 @@ const sound = Sounds()
 const timer = Timer()
 const mode = Mode()
 
-const forestAudio = new Audio('./sounds/Floresta.wav')
-const forestVolume = forest.querySelector('input')
+const buttonPressForest = new Audio("https://github.com/FabioVascao/JavaScript-Intermediario-Desafio-01/blob/main/sounds/Floresta.wav?raw=true") 
+const forestInput = forest.querySelector('input')
 
-
-function adjustVolume(sound, volume) {
-  sound.volume = volume
+function adjustVolume() {
+  buttonPressForest.volume = forestInput.value
 }
 
-forestVolume.addEventListener('input', () => {
-  adjustVolume(forestAudio, forestVolume.value)
+forestInput.addEventListener('input', () => {
+  adjustVolume()
 })
