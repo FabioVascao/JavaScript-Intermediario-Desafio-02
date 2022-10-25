@@ -28,6 +28,11 @@ const buttonModeLight = document.querySelector('.mode') /* Variáveis para o lig
 const buttonModeDark = document.querySelector('.mode2')
 const h1 = document.querySelector('h1');
 
+let forestInput = document.querySelector('#volForest') /* Volume de cada música dentro dos input*/
+let marketInput = document.querySelector('#volMarket')
+let rainInput = document.querySelector('#volRain')
+let fireInput = document.querySelector('#volFire')
+
 /* Exporta as variáveis para outros documentos, sempre adicionar no export*/ 
 export {
   buttonForest,
@@ -49,5 +54,9 @@ export {
   seconds,
   buttonModeLight,
   buttonModeDark,
-  h1
+  h1,
+  forestInput,
+  marketInput,
+  rainInput,
+  fireInput
 }

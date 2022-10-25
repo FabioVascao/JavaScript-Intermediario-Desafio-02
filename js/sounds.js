@@ -8,6 +8,10 @@ import {
   buttonPressRain,
   buttonPressMarket,
   buttonPressFire,
+  forestInput,
+  marketInput,
+  rainInput,
+  fireInput
 } from "./elements.js"
 
 export default function() {
@@ -72,5 +76,24 @@ buttonFire.addEventListener('click', function(){
   pressButtonFire();
 })
 
+forestInput.addEventListener('input', () => {
+  let forestVolume = Number(forestInput.value) / 100;
+  buttonPressForest.volume = forestVolume;
+})
+
+marketInput.addEventListener('input', () => {
+  let marketVolume = Number(marketInput.value) / 100;
+  buttonPressMarket.volume = marketVolume;
+})
+
+rainInput.addEventListener('input', () => {
+  let rainVolume = Number(rainInput.value) / 100;
+  buttonPressRain.volume = rainVolume;
+})
+
+fireInput.addEventListener('input', () => {
+  let fireVolume = Number(fireInput.value) / 100;
+  buttonPressFire.volume = fireVolume;
+})
 }
 
